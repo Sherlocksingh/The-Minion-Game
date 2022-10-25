@@ -1,0 +1,15 @@
+def minion_game(string):
+    # your code goes here
+    l1,l2=0,0
+    for i in range(len(string)):
+        if(string[i] in ['A','E','I','O','U']):
+            l2=l2+(len(string)-i)
+        else:
+            l1=l1+(len(string)-i)
+    if(l1==l2):
+        print("Draw")
+    elif(l1>l2):
+        print('Stuart',l1)
+    else:
+        print('Kevin',l2)
+                    
